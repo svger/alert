@@ -1,5 +1,5 @@
 import React from 'react';
-import MsgTemplate from '../src/index';
+import Alert from '../src/index';
 
 class App extends React.Component {
 
@@ -7,10 +7,11 @@ class App extends React.Component {
     return (
        <div>
          <div>Button Demo</div>
-         <MsgTemplate
-           status="fail"
-           msgResult='消息结果'
-           resuCause='结果原因'
+         <Alert
+           type="error"
+           message='消息内容'
+           description='我是提示内容的具体描述'
+           showIcon
          />
        </div>
     );

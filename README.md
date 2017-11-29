@@ -1,11 +1,12 @@
-##NavBar
-> 可提供成功、失败、警告、错误等提示信息，是一种不打断用户操作的轻量级提示方式。
+##Alert
+> 当某个页面需要向用户显示提示信息时使用。
+> 非浮层的静态展现形式，始终展现,不会自动消失.
 
 
 | 属性             |      说明          |           类型              |       默认值     |
 |-----------------|-------------------|----------------------------|:----------------:|
-|prefixCls|样式前缀，如：`cefc-mesTemp`，可用于自定义样式|String          |'cefc-mesTemp'|
-|status|消息状态，可取值为succ/fail/waring/error| String |   ''      |
-|msgResult|     消息结果 |  String      |   ''  |
-|resuCause|     结果原因    |   String  |   ''  |
+|prefixCls|样式前缀，如：`cefc-alert`，可用于自定义样式|String          |'cefc-alert'|
+|type|消息状态，可取值为succ/info/waring/error| String |   ''      |
+|message|     提示的内容 |  String      |   ''  |
+|description|   提示内容的详细描述      |   String  |   ''  |
 

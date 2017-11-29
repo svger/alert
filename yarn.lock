@@ -1572,6 +1572,28 @@ cefc-tools@~0.0.4:
     webpack-dev-server "~2.9.4"
     webpack-stream "~4.0.0"
 
+cefc-ui-cell@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/cefc-ui-cell/-/cefc-ui-cell-0.0.2.tgz#506172e7bbcc9726cb3cc3084b0e24dac8aa09e1"
+  dependencies:
+    cefc-ui-style "~0.0.1"
+    classnames "~2.2.5"
+    prop-types "~15.6.0"
+    react "~16.1.1"
+    react-dom "~16.1.1"
+
+cefc-ui-icon@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/cefc-ui-icon/-/cefc-ui-icon-0.0.5.tgz#f9f564295b37719d9558198af78857e8ee0ba99b"
+  dependencies:
+    cefc-ui-cell "0.0.2"
+    cefc-ui-style "~0.0.1"
+    classnames "~2.2.5"
+    gulp-replace "^0.6.1"
+    prop-types "~15.6.0"
+    react "~16.1.1"
+    react-dom "~16.1.1"
+
 cefc-ui-style@~0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/cefc-ui-style/-/cefc-ui-style-0.0.1.tgz#877959b28655ee8a6f49636b7fd92cfe4909fd0f"
