@@ -59,7 +59,7 @@ Alert.propTypes = {
   type: PropTypes.string,                     //提示的类型,有succ、info、warning、error四种
   showIcon: PropTypes.bool,                   //是否显示Icon
   prefixCls: PropTypes.string,                //自定义类
-  className: PropTypes.oneOf([                //外部传入类
+  className: PropTypes.oneOfType([            //外部传入类
     PropTypes.string,
     PropTypes.object
   ]),
