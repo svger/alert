@@ -1,6 +1,6 @@
 {
   "name": "cefc-ui-alert",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "CEFC-UI Component",
   "main": "build/index.js",
   "scripts": {

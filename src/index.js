@@ -14,10 +14,7 @@ class Alert extends Component {
   }
 
   render() {
-    let {
-      description, type, prefixCls, message, showIcon,
-      className = '', style
-    } = this.props;
+    let { description, type, prefixCls, message, showIcon,className = '' } = this.props;
 
     const alertCls = classname(prefixCls, className, {
       [`${prefixCls}-${type}`]: true,
@@ -44,7 +41,7 @@ class Alert extends Component {
     }
 
     return (
-      <div className={alertCls} style={style}>
+      <div className={alertCls}>
         { showIcon && <Icon type={iconType} className={`${prefixCls}-icon`} inline/> }
         <span className={`${prefixCls}-message`}>{message}</span>
         <span className={`${prefixCls}-description`}>{description}</span>
@@ -63,7 +60,6 @@ Alert.propTypes = {
     PropTypes.string,
     PropTypes.object
   ]),
-  style: PropTypes.string                     //外部传入样式
 };
 
 Alert.defaultProps = {

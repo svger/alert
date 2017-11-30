@@ -9,4 +9,9 @@
 |type|消息状态，可取值为succ/info/waring/error| String |   ''      |
 |message|     提示的内容 |  String      |   ''  |
 |description|   提示内容的详细描述      |   String  |   ''  |
+|showIcon   | 是否显示Icon      |   boolean  |    true|
+|className|外部传入类|string|无|
 
+##如何使用
+
+`<Alert type="succ" message="我是提示内容" description="我是提示内容的详细描述" showIcon={true}/>`
