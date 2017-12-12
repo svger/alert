@@ -22,27 +22,28 @@ class Alert extends Component {
       [`${prefixCls}-with-description`]: !!description,
     });
 
+    const withDesc = !!description;
     let iconType = '';
     switch (type) {
       case 'succ':
-        iconType = 'checked';
+        iconType = withDesc ? 'icon-success': 'icon-success_fill';
         break;
       case 'info':
-        iconType = 'checked';
+        iconType = withDesc ? 'icon-prompt' : 'icon-prompt_fill';
         break;
       case 'warning':
-        iconType = 'checked';
+        iconType = withDesc ? 'icon-warning' : 'icon-warning_fill';
         break;
       case 'error':
-        iconType = 'checked';
+        iconType = withDesc ? 'icon-delete' : 'icon-error_fill';
         break;
       default:
-        iconType = 'checked'
+        iconType = 'icon-success'
     }
 
     return (
       <div className={alertCls}>
-        { showIcon && <Icon type={iconType} className={`${prefixCls}-icon`} inline/> }
+        { showIcon && <Icon type={iconType} className={`${prefixCls}-icon`}/> }
         <span className={`${prefixCls}-message`}>{message}</span>
         <span className={`${prefixCls}-description`}>{description}</span>
       </div>

@@ -1,6 +1,6 @@
 {
   "name": "cefc-ui-alert",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "CEFC-UI Component",
   "main": "build/index.js",
   "scripts": {
@@ -14,7 +14,7 @@
   "author": "Kane",
   "license": "ISC",
   "dependencies": {
-    "cefc-ui-icon": "^0.0.5",
+    "cefc-ui-icon": "^0.1.0",
     "cefc-ui-style": "~0.0.1",
     "classnames": "~2.2.5",
     "prop-types": "~15.6.0",

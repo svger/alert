@@ -526,9 +526,9 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var _typeof = ty
 		module.exports = classNames;
 	} else if ("function" === 'function' && _typeof(__webpack_require__(10)) === 'object' && __webpack_require__(10)) {
 		// register as 'classnames', consistent with npm package name
-		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
+		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function () {
 			return classNames;
-		}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+		}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 	} else {
 		window.classNames = classNames;
@@ -5812,10 +5812,48 @@ var App = function (_React$Component) {
           'Button Demo'
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__src_index__["a" /* default */], {
-          type: 'error',
-          message: '\u6D88\u606F\u5185\u5BB9',
-          description: '\u6211\u662F\u63D0\u793A\u5185\u5BB9\u7684\u5177\u4F53\u63CF\u8FF0',
+          type: 'succ',
+          message: '\u6211\u662F\u6D88\u606F\u5185\u5BB9,\u6211\u7684showIcon\u4E3Afalse',
+          showIcon: false
+        }),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__src_index__["a" /* default */], {
+          type: 'info',
+          message: '\u6211\u662F\u6D88\u606F\u5185\u5BB9',
           showIcon: true
+        }),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__src_index__["a" /* default */], {
+          type: 'warning',
+          message: '\u6211\u662F\u6D88\u606F\u5185\u5BB9',
+          showIcon: true
+        }),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__src_index__["a" /* default */], {
+          type: 'error',
+          message: '\u6211\u662F\u6D88\u606F\u5185\u5BB9\u6211\u662F\u6D88\u606F\u5185\u5BB9\u6211\u662F\u6D88\u606F\u5185\u5BB9\u6211\u662F\u6D88\u606F\u5185\u5BB9\u6211\u662F\u6D88\u606F\u5185\u5BB9\u6211\u662F\u6D88\u606F\u5185\u5BB9\u6211\u662F\u6D88\u606F\u5185\u5BB9\u6211\u662F\u6D88\u606F\u5185\u5BB9\u6211\u662F\u6D88\u606F\u5185\u5BB9',
+          showIcon: true
+        }),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__src_index__["a" /* default */], {
+          type: 'succ',
+          message: '\u6211\u662F\u6D88\u606F\u5185\u5BB9',
+          showIcon: true,
+          description: '\u6211\u662F\u5185\u5BB9\u7684\u5177\u4F53\u63CF\u8FF0'
+        }),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__src_index__["a" /* default */], {
+          type: 'info',
+          message: '\u6211\u662F\u6D88\u606F\u5185\u5BB9',
+          showIcon: false,
+          description: '\u6211\u7684showIcon\u4E3Afalse'
+        }),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__src_index__["a" /* default */], {
+          type: 'warning',
+          message: '\u6211\u662F\u6D88\u606F\u5185\u5BB9',
+          showIcon: true,
+          description: '\u6211\u662F\u5185\u5BB9\u7684\u5177\u4F53\u63CF\u8FF0'
+        }),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__src_index__["a" /* default */], {
+          type: 'error',
+          message: '\u6211\u662F\u6D88\u606F\u5185\u5BB9\u6211\u662F\u6D88\u606F\u5185\u5BB9\u6211\u662F\u6D88\u606F\u5185\u5BB9\u6211\u662F\u6D88\u606F\u5185\u5BB9\u6211\u662F\u6D88\u606F\u5185\u5BB9\u6211\u662F\u6D88\u606F\u5185\u5BB9',
+          showIcon: true,
+          description: '\u6211\u662F\u5185\u5BB9\u7684\u5177\u4F53\u63CF\u8FF0\u6211\u662F\u5185\u5BB9\u7684\u5177\u4F53\u63CF\u8FF0\u6211\u662F\u5185\u5BB9\u7684\u5177\u4F53\u63CF\u8FF0\u6211\u662F\u5185\u5BB9\u7684\u5177\u4F53\u63CF\u8FF0\u6211\u662F\u5185\u5BB9\u7684\u5177\u4F53\u63CF\u8FF0\u6211\u662F\u5185\u5BB9\u7684\u5177\u4F53\u63CF\u5185\u5BB9\u7684\u5177\u4F53\u63CF\u8FF0'
         })
       );
     }
@@ -5838,8 +5876,7 @@ var App = function (_React$Component) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_classnames__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_cefc_ui_icon__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_cefc_ui_icon___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_cefc_ui_icon__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__style_index_less__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__style_index_less__ = __webpack_require__(35);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__style_index_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__style_index_less__);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -5884,34 +5921,34 @@ var Alert = function (_Component) {
           message = _props.message,
           showIcon = _props.showIcon,
           _props$className = _props.className,
-          className = _props$className === undefined ? '' : _props$className,
-          style = _props.style;
+          className = _props$className === undefined ? '' : _props$className;
 
 
       var alertCls = __WEBPACK_IMPORTED_MODULE_2_classnames___default()(prefixCls, className, (_classname = {}, _defineProperty(_classname, prefixCls + '-' + type, true), _defineProperty(_classname, prefixCls + '-no-icon', !showIcon), _defineProperty(_classname, prefixCls + '-with-description', !!description), _classname));
 
+      var withDesc = !!description;
       var iconType = '';
       switch (type) {
         case 'succ':
-          iconType = 'checked';
+          iconType = withDesc ? 'icon-success' : 'icon-success_fill';
           break;
         case 'info':
-          iconType = 'checked';
+          iconType = withDesc ? 'icon-prompt' : 'icon-prompt_fill';
           break;
         case 'warning':
-          iconType = 'checked';
+          iconType = withDesc ? 'icon-warning' : 'icon-warning_fill';
           break;
         case 'error':
-          iconType = 'checked';
+          iconType = withDesc ? 'icon-delete' : 'icon-error_fill';
           break;
         default:
-          iconType = 'checked';
+          iconType = 'icon-success';
       }
 
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
-        { className: alertCls, style: style },
-        showIcon && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_cefc_ui_icon___default.a, { type: iconType, className: prefixCls + '-icon', inline: true }),
+        { className: alertCls },
+        showIcon && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_cefc_ui_icon__["a" /* default */], { type: iconType, className: prefixCls + '-icon' }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'span',
           { className: prefixCls + '-message' },
@@ -5935,9 +5972,8 @@ Alert.propTypes = {
   type: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string, //提示的类型,有succ、info、warning、error四种
   showIcon: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.bool, //是否显示Icon
   prefixCls: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string, //自定义类
-  className: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.oneOf([//外部传入类
-  __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string, __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.object]),
-  style: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string //外部传入样式
+  className: __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.oneOfType([//外部传入类
+  __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.string, __WEBPACK_IMPORTED_MODULE_1_prop_types___default.a.object])
 };
 
 Alert.defaultProps = {
@@ -6474,71 +6510,33 @@ module.exports = function (isValidElement, throwOnDirectAccess) {
 
 /***/ }),
 /* 32 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_classnames__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_classnames___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_classnames__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__style_index_less__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__style_index_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__style_index_less__);
 
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-var _createClass = function () {
-  function defineProperties(target, props) {
-    for (var i = 0; i < props.length; i++) {
-      var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
-    }
-  }return function (Constructor, protoProps, staticProps) {
-    if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
-  };
-}();
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var _react = __webpack_require__(0);
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-var _react2 = _interopRequireDefault(_react);
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var _classnames = __webpack_require__(9);
 
-var _classnames2 = _interopRequireDefault(_classnames);
 
-var _propTypes = __webpack_require__(8);
 
-var _propTypes2 = _interopRequireDefault(_propTypes);
 
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : { default: obj };
-}
-
-function _defineProperty(obj, key, value) {
-  if (key in obj) {
-    Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });
-  } else {
-    obj[key] = value;
-  }return obj;
-}
-
-function _classCallCheck(instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
-}
-
-function _possibleConstructorReturn(self, call) {
-  if (!self) {
-    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-  }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
-}
-
-function _inherits(subClass, superClass) {
-  if (typeof superClass !== "function" && superClass !== null) {
-    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
-  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-}
-
-__webpack_require__(33);
-var defaultPrefixCls = 'cefc-icon';
 
 var Icon = function (_Component) {
   _inherits(Icon, _Component);
@@ -6559,37 +6557,32 @@ var Icon = function (_Component) {
   _createClass(Icon, [{
     key: 'render',
     value: function render() {
-      var _cns;
-
       var _props = this.props,
           type = _props.type,
-          prefix = _props.prefix,
-          className = _props.className,
-          inline = _props.inline,
-          style = _props.style;
+          className = _props.className;
 
-      var classString = (0, _classnames2.default)((_cns = {}, _defineProperty(_cns, '' + prefix, true), _defineProperty(_cns, prefix + '-ds-inline', !!inline), _defineProperty(_cns, prefix + '-' + type, true), _cns), className);
+      var classString = __WEBPACK_IMPORTED_MODULE_1_classnames___default()(_defineProperty({
+        'iconfont': true
+      }, '' + type, true), className);
 
-      return _react2.default.createElement('i', { key: type, style: style, onClick: this.handleClick, className: classString, onKeyUp: function onKeyUp() {} });
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { onClick: this.handleClick, className: classString });
     }
   }]);
 
   return Icon;
-}(_react.Component);
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
 Icon.propTypes = {
-  prefix: _propTypes2.default.string,
-  type: _propTypes2.default.string.isRequired, //图片类型
-  onClick: _propTypes2.default.func,
-  inline: _propTypes2.default.bool,
-  className: _propTypes2.default.string,
-  style: _propTypes2.default.object
+  type: __WEBPACK_IMPORTED_MODULE_2_prop_types___default.a.string.isRequired, //icon类型
+  onClick: __WEBPACK_IMPORTED_MODULE_2_prop_types___default.a.func,
+  className: __WEBPACK_IMPORTED_MODULE_2_prop_types___default.a.string
 };
 Icon.defaultProps = {
-  prefix: defaultPrefixCls,
   className: ''
 };
-exports.default = Icon;
+
+
+/* harmony default export */ __webpack_exports__["a"] = (Icon);
 
 /***/ }),
 /* 33 */
@@ -6623,10 +6616,10 @@ if(false) {
 
 exports = module.exports = __webpack_require__(11)();
 // imports
-
+exports.push([module.i, "@import url(//at.alicdn.com/t/font_501801_vqa8vl6h5bzz1tt9.css);", ""]);
 
 // module
-exports.push([module.i, ".cefc-icon{display:block}.cefc-icon-ds-inline{display:inline-block}.cefc-icon-checked{width:.28rem;height:.28rem;background:url(" + __webpack_require__(35) + ") no-repeat;background-size:.24rem auto;background-position:50%}.cefc-icon-close-circle{width:.28rem;height:.28rem;background:url(" + __webpack_require__(36) + ") no-repeat;background-size:.24rem auto;background-position:50%}.cefc-icon-down{width:.28rem;height:.28rem;background:url(" + __webpack_require__(37) + ") no-repeat;background-size:.24rem auto;background-position:50%}.cefc-icon-down-s{width:.28rem;height:.28rem;background:url(" + __webpack_require__(38) + ") no-repeat;background-size:.24rem auto;background-position:50%}.cefc-icon-exclamation-circle{width:.28rem;height:.28rem;background:url(" + __webpack_require__(39) + ") no-repeat;background-size:.24rem auto;background-position:50%}.cefc-icon-left-circle{width:.28rem;height:.28rem;background:url(" + __webpack_require__(40) + ") no-repeat;background-size:.24rem auto;background-position:50%}.cefc-icon-loading{width:.28rem;height:.28rem;background:url(" + __webpack_require__(41) + ") no-repeat;background-size:.24rem auto;background-position:50%}.cefc-icon-minus-circle{width:.28rem;height:.28rem;background:url(" + __webpack_require__(42) + ") no-repeat;background-size:.24rem auto;background-position:50%}.cefc-icon-right{width:.28rem;height:.28rem;background:url(" + __webpack_require__(43) + ") no-repeat;background-size:.24rem auto;background-position:50%}.cefc-icon-search{width:.28rem;height:.28rem;background:url(" + __webpack_require__(44) + ") no-repeat;background-size:.24rem auto;background-position:50%}.cefc-icon-up{width:.28rem;height:.28rem;background:url(" + __webpack_require__(45) + ") no-repeat;background-size:.24rem auto;background-position:50%}.cefc-icon-up-s{width:.28rem;height:.28rem;background:url(" + __webpack_require__(46) + ") no-repeat;background-size:.24rem auto;background-position:50%}.cefc-icon-plus-circle{width:.28rem;height:.28rem;background:url(" + __webpack_require__(47) + ") no-repeat;background-size:.24rem auto;background-position:50%}.cefc-icon-reload{width:.28rem;height:.28rem;background:url(" + __webpack_require__(48) + ") no-repeat;background-size:.24rem auto;background-position:50%}.cefc-icon-close{width:.26rem;height:.26rem;background:url(" + __webpack_require__(49) + ") no-repeat;background-size:.22rem auto;background-position:50%}", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -6635,100 +6628,10 @@ exports.push([module.i, ".cefc-icon{display:block}.cefc-icon-ds-inline{display:i
 /* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "images/5c702c79.checked.png";
-
-/***/ }),
-/* 36 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/0ff82584.close-circle.png";
-
-/***/ }),
-/* 37 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/f4833dd2.down.png";
-
-/***/ }),
-/* 38 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/17a253de.down-s.png";
-
-/***/ }),
-/* 39 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/67558ac0.exclamation-circle.png";
-
-/***/ }),
-/* 40 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/a61ebf7e.left-circle.png";
-
-/***/ }),
-/* 41 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/8e7c3e24.loading.png";
-
-/***/ }),
-/* 42 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/748d08d0.minus-circle.png";
-
-/***/ }),
-/* 43 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/4ed482e1.right.png";
-
-/***/ }),
-/* 44 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/c7e55474.search.png";
-
-/***/ }),
-/* 45 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/9344efc5.up.png";
-
-/***/ }),
-/* 46 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/7df05956.up-s.png";
-
-/***/ }),
-/* 47 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/199c71a8.plus-circle.png";
-
-/***/ }),
-/* 48 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/ae82b035.reload.png";
-
-/***/ }),
-/* 49 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "images/fc74ee1d.close.png";
-
-/***/ }),
-/* 50 */
-/***/ (function(module, exports, __webpack_require__) {
-
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(51);
+var content = __webpack_require__(36);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(12)(content, {});
@@ -6748,7 +6651,7 @@ if(false) {
 }
 
 /***/ }),
-/* 51 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(11)();
@@ -6756,7 +6659,7 @@ exports = module.exports = __webpack_require__(11)();
 
 
 // module
-exports.push([module.i, ".cefc-alert{padding:8px 48px 8px 38px;border-radius:4px;color:rgba(0,0,0,.65);font-size:12px;line-height:1.5;position:relative}.cefc-alert.cefc-alert-no-icon{padding:8px 48px 8px 16px}.cefc-alert-icon{top:10px;left:14px;width:14px;height:14px;position:absolute}.cefc-alert-description{font-size:12px;line-height:21px;display:none}.cefc-alert-with-description .cefc-alert-description{display:block}.cefc-alert-with-description .cefc-alert-icon{top:18px;left:16px;width:14px;height:14px;position:absolute}.cefc-alert-with-description .cefc-alert-message{color:rgba(0,0,0,.85);font-size:14px;display:block;margin-bottom:4px}.cefc-alert-succ{background-color:#ebf8f2;border:1px solid #cfefdf}.cefc-alert-succ .cefc-alert-icon{background-color:#00a854}.cefc-alert-info{background-color:#ecf6fd;border:1px solid #d2eafb}.cefc-alert-info .cefc-alert-icon{background-color:#108ee9}.cefc-alert-warning{background-color:#fffaeb;border:1px solid #fff3cf}.cefc-alert-warning .cefc-alert-icon{background-color:#ffbf00}.cefc-alert-error{background-color:#fef0ef;border:1px solid #fcdbd9}.cefc-alert-error .cefc-alert-icon{background-color:#f04134}", ""]);
+exports.push([module.i, ".cefc-alert{padding:8px 48px 8px 38px;border-radius:4px;color:rgba(0,0,0,.65);font-size:12px;position:relative}.cefc-alert.cefc-alert-no-icon{padding:8px 48px 8px 16px}.cefc-alert-icon{top:7px;left:14px;font-size:17px;position:absolute}.cefc-alert-description{font-size:12px;line-height:21px;display:none}.cefc-alert-with-description{padding:15px 15px 15px 64px;position:relative}.cefc-alert-with-description .cefc-alert-description{display:block}.cefc-alert-with-description .cefc-alert-icon{top:14px;left:24px;font-size:29px;position:absolute}.cefc-alert-with-description .cefc-alert-message{color:rgba(0,0,0,.85);font-size:14px;display:block;margin-bottom:4px}.cefc-alert-succ{background-color:#ebf8f2;border:1px solid #cfefdf}.cefc-alert-succ .cefc-alert-icon{color:#00a854}.cefc-alert-info{background-color:#ecf6fd;border:1px solid #d2eafb}.cefc-alert-info .cefc-alert-icon{color:#108ee9}.cefc-alert-warning{background-color:#fffaeb;border:1px solid #fff3cf}.cefc-alert-warning .cefc-alert-icon{color:#ffbf00}.cefc-alert-error{background-color:#fef0ef;border:1px solid #fcdbd9}.cefc-alert-error .cefc-alert-icon{color:#f04134}", ""]);
 
 // exports
 
