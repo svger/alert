@@ -18,7 +18,7 @@ class Alert extends Component {
   }
 
   render() {
-    let { description, type, prefixCls, message, showIcon, className = '' } = this.props;
+    let { description, type, prefixCls, message, showIcon, className } = this.props;
 
     const alertCls = classname(prefixCls, className, {
       [`${prefixCls}-${type}`]: true,
@@ -32,8 +32,10 @@ class Alert extends Component {
     return (
       <div className={alertCls}>
         { showIcon && <Icon type={iconType} className={`${prefixCls}-icon`} /> }
-        <span className={`${prefixCls}-message`}>{message}</span>
-        <span className={`${prefixCls}-description`}>{description}</span>
+        <div className={`${prefixCls}-text`}>
+          <span className={`${prefixCls}-message`}>{message}</span>
+          <span className={`${prefixCls}-description`}>{description}</span>
+        </div>
       </div>
     )
   }
@@ -54,7 +56,8 @@ Alert.propTypes = {
 Alert.defaultProps = {
   type: 'succ',
   showIcon: true,
-  prefixCls: 'cefc-alert'
+  prefixCls: 'cefc-alert',
+  className: ''
 };
 
 export default Alert;

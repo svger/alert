@@ -5932,8 +5932,7 @@ var Alert = function (_Component) {
           prefixCls = _props.prefixCls,
           message = _props.message,
           showIcon = _props.showIcon,
-          _props$className = _props.className,
-          className = _props$className === undefined ? '' : _props$className;
+          className = _props.className;
 
 
       var alertCls = __WEBPACK_IMPORTED_MODULE_2_classnames___default()(prefixCls, className, (_classname = {}, _defineProperty(_classname, prefixCls + '-' + type, true), _defineProperty(_classname, prefixCls + '-no-icon', !showIcon), _defineProperty(_classname, prefixCls + '-with-description', !!description), _classname));
@@ -5946,14 +5945,18 @@ var Alert = function (_Component) {
         { className: alertCls },
         showIcon && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_cefc_ui_icon__["a" /* default */], { type: iconType, className: prefixCls + '-icon' }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'span',
-          { className: prefixCls + '-message' },
-          message
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'span',
-          { className: prefixCls + '-description' },
-          description
+          'div',
+          { className: prefixCls + '-text' },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'span',
+            { className: prefixCls + '-message' },
+            message
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'span',
+            { className: prefixCls + '-description' },
+            description
+          )
         )
       );
     }
@@ -5975,7 +5978,8 @@ Alert.propTypes = {
 Alert.defaultProps = {
   type: 'succ',
   showIcon: true,
-  prefixCls: 'cefc-alert'
+  prefixCls: 'cefc-alert',
+  className: ''
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (Alert);
@@ -6658,7 +6662,7 @@ exports = module.exports = __webpack_require__(11)();
 
 
 // module
-exports.push([module.i, ".cefc-alert{padding:8px 48px 8px 38px;border-radius:4px;color:rgba(0,0,0,.65);font-size:12px;position:relative}.cefc-alert.cefc-alert-no-icon{padding:8px 48px 8px 16px}.cefc-alert-icon{top:7px;left:14px;font-size:17px;position:absolute}.cefc-alert-description{font-size:12px;line-height:21px;display:none}.cefc-alert-with-description{padding:15px 15px 15px 64px;position:relative}.cefc-alert-with-description .cefc-alert-description{display:block}.cefc-alert-with-description .cefc-alert-icon{top:14px;left:24px;font-size:29px;position:absolute}.cefc-alert-with-description .cefc-alert-message{color:rgba(0,0,0,.85);font-size:14px;display:block;margin-bottom:4px}.cefc-alert-succ{background-color:#f6ffed;border:1px solid #b7eb8f}.cefc-alert-succ .cefc-alert-icon{color:#52c41a}.cefc-alert-info{background-color:#e6f7ff;border:1px solid #91d5ff}.cefc-alert-info .cefc-alert-icon{color:#1890ff}.cefc-alert-warning{background-color:#fffbe6;border:1px solid #ffe58f}.cefc-alert-warning .cefc-alert-icon{color:#faad14}.cefc-alert-error{background-color:#fff1f0;border:1px solid #ffa39e}.cefc-alert-error .cefc-alert-icon{color:#f5222d}", ""]);
+exports.push([module.i, ".cefc-alert{position:relative;padding:.1rem .48rem .1rem .38rem;border-radius:.04rem;color:#fff;font-size:.12rem;display:flex;align-items:center;justify-content:center}.cefc-alert.cefc-alert-no-icon{padding:.08rem .48rem .08rem .16rem}.cefc-alert-icon{left:.14rem;font-size:.16rem;position:absolute;color:#fff}.cefc-alert-description{font-size:.12rem;line-height:.21rem;display:none}.cefc-alert-with-description{padding:.25rem .15rem .25rem .48rem;position:relative}.cefc-alert-text{flex:1}.cefc-alert-with-description .cefc-alert-description{display:block;margin-top:.08rem}.cefc-alert-with-description .cefc-alert-icon{font-size:.29rem}.cefc-alert-with-description .cefc-alert-message{font-size:.16rem;display:block;margin-bottom:.04rem}.cefc-alert-succ{background-color:#84ca34}.cefc-alert-info{background-color:#35abf3}.cefc-alert-warning{background-color:#feaa33}.cefc-alert-error{background-color:#f95a56}", ""]);
 
 // exports
 
