@@ -5,16 +5,20 @@ import Icon from 'cefc-ui-icon';
 import style from './style/index.less';
 
 class Alert extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      closing: true,
-      closed: false
-    }
+  getIconType = (type, withDesc) => {
+    const Icons = {
+      succ: 'success',
+      info: 'prompt',
+      warning: 'warning',
+      error: 'error'
+    };
+    const iconType = withDesc ? Icons[type] : `${Icons[type]}_fill`;
+
+    return iconType || 'success';
   }
 
   render() {
-    let { description, type, prefixCls, message, showIcon,className = '' } = this.props;
+    let { description, type, prefixCls, message, showIcon, className = '' } = this.props;
 
     const alertCls = classname(prefixCls, className, {
       [`${prefixCls}-${type}`]: true,
@@ -23,27 +27,11 @@ class Alert extends Component {
     });
 
     const withDesc = !!description;
-    let iconType = '';
-    switch (type) {
-      case 'succ':
-        iconType = withDesc ? 'icon-success': 'icon-success_fill';
-        break;
-      case 'info':
-        iconType = withDesc ? 'icon-prompt' : 'icon-prompt_fill';
-        break;
-      case 'warning':
-        iconType = withDesc ? 'icon-warning' : 'icon-warning_fill';
-        break;
-      case 'error':
-        iconType = withDesc ? 'icon-delete' : 'icon-error_fill';
-        break;
-      default:
-        iconType = 'icon-success'
-    }
+    let iconType = this.getIconType(type, withDesc);
 
     return (
       <div className={alertCls}>
-        { showIcon && <Icon type={iconType} className={`${prefixCls}-icon`}/> }
+        { showIcon && <Icon type={iconType} className={`${prefixCls}-icon`} /> }
         <span className={`${prefixCls}-message`}>{message}</span>
         <span className={`${prefixCls}-description`}>{description}</span>
       </div>

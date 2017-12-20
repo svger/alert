@@ -14,7 +14,7 @@
   "author": "Kane",
   "license": "ISC",
   "dependencies": {
-    "cefc-ui-icon": "^0.1.0",
+    "cefc-ui-icon": "^0.0.15",
     "cefc-ui-style": "~0.0.1",
     "classnames": "~2.2.5",
     "prop-types": "~15.6.0",

@@ -5897,16 +5897,28 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Alert = function (_Component) {
   _inherits(Alert, _Component);
 
-  function Alert(props) {
+  function Alert() {
+    var _ref;
+
+    var _temp, _this, _ret;
+
     _classCallCheck(this, Alert);
 
-    var _this = _possibleConstructorReturn(this, (Alert.__proto__ || Object.getPrototypeOf(Alert)).call(this, props));
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
 
-    _this.state = {
-      closing: true,
-      closed: false
-    };
-    return _this;
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Alert.__proto__ || Object.getPrototypeOf(Alert)).call.apply(_ref, [this].concat(args))), _this), _this.getIconType = function (type, withDesc) {
+      var Icons = {
+        succ: 'success',
+        info: 'prompt',
+        warning: 'warning',
+        error: 'error'
+      };
+      var iconType = withDesc ? Icons[type] : Icons[type] + '_fill';
+
+      return iconType || 'success';
+    }, _temp), _possibleConstructorReturn(_this, _ret);
   }
 
   _createClass(Alert, [{
@@ -5927,23 +5939,7 @@ var Alert = function (_Component) {
       var alertCls = __WEBPACK_IMPORTED_MODULE_2_classnames___default()(prefixCls, className, (_classname = {}, _defineProperty(_classname, prefixCls + '-' + type, true), _defineProperty(_classname, prefixCls + '-no-icon', !showIcon), _defineProperty(_classname, prefixCls + '-with-description', !!description), _classname));
 
       var withDesc = !!description;
-      var iconType = '';
-      switch (type) {
-        case 'succ':
-          iconType = withDesc ? 'icon-success' : 'icon-success_fill';
-          break;
-        case 'info':
-          iconType = withDesc ? 'icon-prompt' : 'icon-prompt_fill';
-          break;
-        case 'warning':
-          iconType = withDesc ? 'icon-warning' : 'icon-warning_fill';
-          break;
-        case 'error':
-          iconType = withDesc ? 'icon-delete' : 'icon-error_fill';
-          break;
-        default:
-          iconType = 'icon-success';
-      }
+      var iconType = this.getIconType(type, withDesc);
 
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
@@ -6521,8 +6517,6 @@ module.exports = function (isValidElement, throwOnDirectAccess) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__style_index_less__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__style_index_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__style_index_less__);
-
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -6541,31 +6535,29 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Icon = function (_Component) {
   _inherits(Icon, _Component);
 
-  function Icon(props, context) {
+  function Icon() {
     _classCallCheck(this, Icon);
 
-    var _this = _possibleConstructorReturn(this, (Icon.__proto__ || Object.getPrototypeOf(Icon)).call(this, props, context));
-
-    _this.handleClick = function () {
-      _this.props.onClick && _this.props.onClick();
-    };
-
-    _this.state = {};
-    return _this;
+    return _possibleConstructorReturn(this, (Icon.__proto__ || Object.getPrototypeOf(Icon)).apply(this, arguments));
   }
 
   _createClass(Icon, [{
     key: 'render',
     value: function render() {
+      var _classnames;
+
       var _props = this.props,
           type = _props.type,
-          className = _props.className;
+          className = _props.className,
+          color = _props.color,
+          size = _props.size,
+          prefixCls = _props.prefixCls;
 
-      var classString = __WEBPACK_IMPORTED_MODULE_1_classnames___default()(_defineProperty({
+      var classString = __WEBPACK_IMPORTED_MODULE_1_classnames___default()((_classnames = {
         'iconfont': true
-      }, '' + type, true), className);
+      }, _defineProperty(_classnames, prefixCls + '-' + type, true), _defineProperty(_classnames, prefixCls + '-' + color, true), _defineProperty(_classnames, prefixCls + '-' + size, true), _classnames), className);
 
-      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { onClick: this.handleClick, className: classString });
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('i', { onClick: this.props.onClick, className: classString });
     }
   }]);
 
@@ -6573,12 +6565,19 @@ var Icon = function (_Component) {
 }(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
 
 Icon.propTypes = {
+  prefixCls: __WEBPACK_IMPORTED_MODULE_2_prop_types___default.a.string, //样式前缀
   type: __WEBPACK_IMPORTED_MODULE_2_prop_types___default.a.string.isRequired, //icon类型
   onClick: __WEBPACK_IMPORTED_MODULE_2_prop_types___default.a.func,
-  className: __WEBPACK_IMPORTED_MODULE_2_prop_types___default.a.string
+  color: __WEBPACK_IMPORTED_MODULE_2_prop_types___default.a.oneOf(['blue', 'white']),
+  size: __WEBPACK_IMPORTED_MODULE_2_prop_types___default.a.oneOf(['sm', 'md', 'lg']),
+  className: __WEBPACK_IMPORTED_MODULE_2_prop_types___default.a.string //外部传入类
 };
 Icon.defaultProps = {
-  className: ''
+  prefixCls: 'cefc-icon',
+  className: '',
+  color: 'blue',
+  size: 'md',
+  onClick: function onClick() {}
 };
 
 
@@ -6616,10 +6615,10 @@ if(false) {
 
 exports = module.exports = __webpack_require__(11)();
 // imports
-exports.push([module.i, "@import url(//at.alicdn.com/t/font_501801_vqa8vl6h5bzz1tt9.css);", ""]);
+exports.push([module.i, "@import url(//at.alicdn.com/t/font_501801_hs2m4lu80fz85mi.css);", ""]);
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".cefc-icon-blue{color:#45a6ec}.cefc-icon-white{color:#fff}.cefc-icon-sm{font-size:.22rem}.cefc-icon-md{font-size:.24rem}.cefc-icon-lg{font-size:.26rem}", ""]);
 
 // exports
 
